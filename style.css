@@ -123,10 +123,23 @@ body{
 .home-btn:hover{
     background: #c2081c;
 }
-.home-img img{
-    width: 125%;
-    margin-right: -100px;
-    margin-bottom: -75px;
+.home-img{
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+
+
+}
+.carrossel-imgs{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.carrossel-imgs img{
+    object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: transparent;
 }
 /*titles*/
 .title1 {
@@ -293,6 +306,7 @@ body{
         font-size: 1.3rem;
         line-height: 1.8rem;
     }
+   
    .home-img{
         width: 80%;
         margin-top: -70px;
